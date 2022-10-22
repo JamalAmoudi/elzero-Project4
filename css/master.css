@@ -147,6 +147,10 @@ ul {
         display: none;
     }
 
+    .warning {
+        display: none;
+    }
+
 
 }
 
