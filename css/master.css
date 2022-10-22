@@ -47,7 +47,7 @@ ul {
 ::-webkit-scrollbar-thumb {
     background-color: var(--blue-color);
     border-radius: 8px;
-    
+
 }
 
 ::-webkit-scrollbar-thumb:hover {
@@ -219,7 +219,7 @@ ul {
 
 .page .contentbody {
     margin: 20px 20px 40px;
-    
+
 }
 
 .page .contentbody h1 {
@@ -257,17 +257,17 @@ ul {
 }
 
 .wrapper {
-    grid-template-columns:repeat(auto-fill , minmax(450px , 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
     margin-left: 20px;
-    margin-right:20px;
+    margin-right: 20px;
 }
 
 @media (max-width:767px) {
     .wrapper {
-        grid-template-columns: minmax(200px , 1fr);
+        grid-template-columns: minmax(200px, 1fr);
         margin-left: 10px;
-        margin-right:10px;
-        gap:10px;
+        margin-right: 10px;
+        gap: 10px;
     }
 }
 
@@ -281,6 +281,7 @@ ul {
     width: 100%;
     object-fit: contain;
 }
+
 /* End Content */
 
 /* Start Welcome Widget */
@@ -288,7 +289,7 @@ ul {
     overflow: hidden;
 }
 
-.welcome .intro  figure{
+.welcome .intro figure {
     width: 170px;
     margin-bottom: -10px;
 }
@@ -304,32 +305,32 @@ ul {
     transition: 0.3s;
 }
 
-.welcome .avatar:hover{
-    border: 2px solid var(--blue-color); 
+.welcome .avatar:hover {
+    border: 2px solid var(--blue-color);
     transform: scale(1.07);
 }
 
 .welcome .explain {
-display: none;
-position: absolute;
-margin-top: 10px;
-transition: 0.3;
-background-color: var(--blue-alt-color);
-padding: 10px 15px;
-color: white;
-border-radius: 8px;
+    display: none;
+    position: absolute;
+    margin-top: 10px;
+    transition: 0.3;
+    background-color: var(--blue-alt-color);
+    padding: 10px 15px;
+    color: white;
+    border-radius: 8px;
 }
 
-.welcome .explain::before{
+.welcome .explain::before {
     content: '';
     width: 0;
     height: 0;
     border-left: 3.5px solid transparent;
     border-right: 3.5px solid transparent;
-    border-bottom:7px solid var(--blue-alt-color);
+    border-bottom: 7px solid var(--blue-alt-color);
     position: absolute;
-    left:50px;
-    top:-7px;
+    left: 50px;
+    top: -7px;
 }
 
 .welcome .avatar img {
@@ -338,8 +339,8 @@ border-radius: 8px;
 }
 
 .welcome .body {
-border-top: 1px solid #eee;
-border-bottom: 1px solid #eee;
+    border-top: 1px solid #eee;
+    border-bottom: 1px solid #eee;
 }
 
 .welcome .body>div {
@@ -348,30 +349,31 @@ border-bottom: 1px solid #eee;
 }
 
 .welcome .visit {
-margin:0 15px 15px auto;
-transition: 0.3s;
+    margin: 0 15px 15px auto;
+    transition: 0.3s;
 }
 
-.welcome .visit:hover{
+.welcome .visit:hover {
     background-color: var(--blue-alt-color);
-    
+
 }
 
 
-.warning p{
-margin: 0;
+.warning p {
+    margin: 0;
 }
 
 #close {
-    color:var(--red-color);
+    color: var(--red-color);
     cursor: pointer;
 }
+
 /* End Welcome Widget */
 
 /*Start Quick Draft Widget */
-.quick-draft textarea{
-resize: none ;
-min-height: 180px ;
+.quick-draft textarea {
+    resize: none;
+    min-height: 180px;
 
 }
 
@@ -382,48 +384,49 @@ min-height: 180px ;
 }
 
 .quick-draft .save:hover {
-background-color: var(--blue-alt-color);
+    background-color: var(--blue-alt-color);
 }
+
 /*End Quick Draft Widget */
 
 
 /* Start Targets  */
 
 .targets .target-row .icon {
-width: 80px;
-height: 80px;
-margin-right:15px ;
+    width: 80px;
+    height: 80px;
+    margin-right: 15px;
 }
 
 .targets .details {
-flex: 1;
+    flex: 1;
 }
 
 
-.targets .details .progress{
+.targets .details .progress {
     height: 4px;
 }
 
-.targets .details .progress > span {
-position: absolute;
-left: 0;
-top: 0;
-height: 100%;
+.targets .details .progress>span {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
 
 }
 
-.targets .details .progress > span span {
-position: absolute;
-bottom: 16px;
-right: -16px;
-color: white;
-padding: 2px 5px;
-border-radius: 6px;
-font-size: 13px;
+.targets .details .progress>span span {
+    position: absolute;
+    bottom: 16px;
+    right: -16px;
+    color: white;
+    padding: 2px 5px;
+    border-radius: 6px;
+    font-size: 13px;
 
 }
 
-.targets .details .progress > span span ::after{
+.targets .details .progress>span span ::after {
     content: "";
     border-color: transparent;
     border-width: 5px;
@@ -434,35 +437,76 @@ font-size: 13px;
     transform: translateX(-50%);
 }
 
-.targets .details .progress > .blue span ::after {
+.targets .details .progress>.blue span ::after {
     border-top-color: var(--blue-color);
 }
 
-.targets .details .progress > .orange span ::after {
+.targets .details .progress>.orange span ::after {
     border-top-color: var(--orange-color);
 }
 
-.targets .details .progress > .green span ::after {
+.targets .details .progress>.green span ::after {
     border-top-color: var(--green-color);
 }
 
-.blue .icon ,
+.blue .icon,
 .blue .progress {
     background-color: rgba(0 117 255 / 20%);
 }
 
-.orange .icon ,
+.orange .icon,
 .orange .progress {
     background-color: rgba(245 158 11 / 20%);
 }
 
-.green .icon ,
+.green .icon,
 .green .progress {
     background-color: rgba(34 197 94 / 20%);
 }
 
 
-
-
-
 /* End Targets  */
+
+/* Start Tickets */
+
+.tickets .box {
+    border: 1px solid #ccc;
+    width: calc(50% - 10px);
+}
+
+@media (max-width:767px) {
+    .tickets .box {
+        width: 100%;
+    }
+}
+
+/* End Tickets */
+
+
+/* Start Latest News */
+
+
+.latest-news .news-row:not(:last-of-type){
+margin-bottom: 20px;
+padding-bottom: 20px;
+border-bottom: 1px solid #eee;
+}
+
+.latest-news .news-row figure {
+    width: 100px;
+    height: 60px;
+    border-radius: 6px;
+    margin-right: 15px;
+    overflow: hidden;
+    
+    
+}
+
+.latest-news .news-row figure img {
+    width: 100%;
+    object-fit: cover;
+
+
+}
+
+/* End Latest News */

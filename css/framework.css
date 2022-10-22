@@ -44,6 +44,11 @@
 .b-none {
     border-style: none;
 }
+
+.f-wrap {
+    flex-wrap: wrap;
+}
+
 @media (max-width:767px) {
     .block-mobile {
         display: block;
@@ -144,6 +149,11 @@
     color: var(--green-color);
 }
 
+
+.c-red{
+    color: var(--red-color);
+}
+
 /* End-color */
 
 /* Start Position */
@@ -175,6 +185,9 @@
     border-radius: 10px;
 }
 
+.fw-bold{
+    font-weight: bold;
+}
 
 /* End Border */
 
