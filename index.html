@@ -89,7 +89,9 @@
                 <div class="search p-relative">
                     <input class="p-10" type="search" placeholder="Type Key Word">
                 </div>
-
+                <div class="warning">
+                    <p>The website is under development! <span id="close">x</span></p>
+                </div>
                 <div class="icons d-flex align-center">
                     <span class="notification p-relative">
                         <i class="fa-solid fa-bell fa-lg"></i>
@@ -102,6 +104,9 @@
                 </div>
             </div>
             <!-- End Head -->
+
+            <!-- Start Welcome Widget -->
+
 
             <div class="contentbody">
                 <h1 class="p-relative"> Dashboard</h1>
@@ -124,9 +129,90 @@
                             <div>80 <span class="d-block c-grey fs-14 mt-10">Projects</span></div>
                             <div>$8500 <span class="d-block c-grey fs-14 mt-10">Earned</span></div>
                         </div>
-                        <a href="profile.html"
-                            class="visit d-block fs-14 rad-6 bg-blue c-white w-fit btn-shape">Profile</a>
+                        <a href="profile.html" class="visit d-block fs-14 bg-blue c-white w-fit btn-shape">Profile</a>
                     </div>
+
+                    <!-- End Welcome Widget -->
+
+                    <!--  Start Quick Draft Widget -->
+
+                    <div class="quick-draft p-20 bg-white rad-10">
+                        <h2 class="mt-0 mb-10">Quick Draft</h2>
+                        <p class="mt-0 mb-20 c-grey fs-15">Write A Draft For Your Ideas</p>
+                        <form action="">
+                            <input class="d-block mb-20 w-full p-10 b-none bg-eee rad-6" type="text"
+                                placeholder="Titel">
+                            <textarea class="d-block mb-20 w-full p-10 b-none bg-eee rad-6"
+                                placeholder="Your Thought"></textarea>
+                            <input class="save d-block fs-14 bg-blue c-white b-none w-fit btn-shape" type="submit"
+                                value="save">
+
+                        </form>
+
+                    </div>
+
+                    <!--  End Quick Draft Widget -->
+
+                    <!-- Start Targets -->
+                    <div class="targets p-20 bg-white rad-10 ">
+                        <h2 class="mt-0 mb-10">Yearly Targets</h2>
+                        <p class="mt-0 mb-20 c-grey fs-15">Targets Of the Year</p>
+                        <div class="target-row mb-20  d-flex align-center blue">
+                            <div class="icon center-flex">
+                                <i class="fa-solid fa-dollar-sign  fa-lg c-blue"></i>
+                            </div>
+
+                            <div class="details">
+                                <span class="fs-14 c-grey">Money</span>
+                                <span class="d-block mt-5 mb-10 fw-boald">$20.000</span>
+                                <div class="progress p-relative">
+                                    <span class="bg-blue blue" style="width: 46%;">
+                                    <span class="bg-blue">46%</span>
+                                    </span>
+
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="target-row mb-20  d-flex align-center orange">
+                            <div class="icon center-flex">
+                                <i class="fa-solid fa-code  fa-lg c-orange"></i>
+                            </div>
+
+                            <div class="details">
+                                <span class="fs-14 c-grey">Projects</span>
+                                <span class="d-block mt-5 mb-10 fw-boald">24</span>
+                                <div class="progress p-relative">
+                                    <span class="bg-orange blue" style="width: 55%;">
+                                    <span class="bg-orange">55%</span>
+                                    </span>
+
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="target-row mb-20  d-flex align-center green">
+                            <div class="icon center-flex">
+                                <i class="fa-solid fa-user  fa-lg c-green"></i>
+                            </div>
+
+                            <div class="details">
+                                <span class="fs-14 c-grey">Team</span>
+                                <span class="d-block mt-5 mb-10 fw-boald">12</span>
+                                <div class="progress p-relative">
+                                    <span class="bg-green blue" style="width: 75%;">
+                                    <span class="bg-green">75%</span>
+                                    </span>
+
+                                </div>
+
+                            </div>
+                        </div>
+
+
+                    </div>
+                    <!-- End Targets -->
 
                 </div>
             </div>
@@ -140,8 +226,13 @@
     <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
     <script>
         $(".avatar").hover(
-            function(){
-            $('.explain').fadeToggle().css('display', 'initial')
+            function () {
+                $('.explain').fadeToggle().css('display', 'initial')
+            });
+
+
+        $("#close").on('click', function () {
+            $('.warning').fadeToggle().css('display', 'none')
         });
     </script>
 
