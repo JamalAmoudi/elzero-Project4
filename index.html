@@ -118,12 +118,14 @@
 
                         </div>
                         <figure class="avatar"><img src="imgs/avatar.png" alt=""></figure>
+                        <span class="explain">Jamal Amoudi</span>
                         <div class="body txt-c d-flex p-20 mt-20 mb-20 block-mobile">
                             <div>Jamal Amoudi <span class="d-block c-grey fs-14 mt-10">Developer</span></div>
                             <div>80 <span class="d-block c-grey fs-14 mt-10">Projects</span></div>
                             <div>$8500 <span class="d-block c-grey fs-14 mt-10">Earned</span></div>
                         </div>
-                        <a href="profile.html" class="visit d-block fs-14 rad-6 bg-blue c-white w-fit btn-shape">Profile</a>
+                        <a href="profile.html"
+                            class="visit d-block fs-14 rad-6 bg-blue c-white w-fit btn-shape">Profile</a>
                     </div>
 
                 </div>
@@ -132,6 +134,16 @@
 
         </div>
     </section>
+
+
+    <script src="jQuery.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+    <script>
+        $(".avatar").hover(
+            function(){
+            $('.explain').fadeToggle().css('display', 'initial')
+        });
+    </script>
 
 </body>
 

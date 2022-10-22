@@ -305,6 +305,29 @@ ul {
     transform: scale(1.07);
 }
 
+.welcome .explain {
+display: none;
+position: absolute;
+margin-top: 10px;
+transition: 0.3;
+background-color: var(--blue-alt-color);
+padding: 10px 15px;
+color: white;
+border-radius: 8px;
+}
+
+.welcome .explain::before{
+    content: '';
+    width: 0;
+    height: 0;
+    border-left: 3.5px solid transparent;
+    border-right: 3.5px solid transparent;
+    border-bottom:7px solid var(--blue-alt-color);
+    position: absolute;
+    left:50px;
+    top:-7px;
+}
+
 .welcome .avatar img {
     width: 100%;
     object-fit: cover;
