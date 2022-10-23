@@ -254,7 +254,7 @@
                             <figure>
                                 <img src="imgs/news-01.jpg" alt="">
                             </figure>
-                            <div>
+                            <div class="info">
                                 <h3>Created SASS Section</h3>
                                 <p class="m-0 fs-14 c-grey">News SASS Example & Tutorials</p>
                             </div>
@@ -265,7 +265,7 @@
                             <figure>
                                 <img src="imgs/news-02.jpg" alt="">
                             </figure>
-                            <div>
+                            <div class="info">
                                 <h3>Created SASS Section</h3>
                                 <p class="m-0 fs-14 c-grey">News SASS Example & Tutorials</p>
                             </div>
@@ -276,7 +276,7 @@
                             <figure>
                                 <img src="imgs/news-03.jpg" alt="">
                             </figure>
-                            <div>
+                            <div class="info">
                                 <h3>Created SASS Section</h3>
                                 <p class="m-0 fs-14 c-grey">News SASS Example & Tutorials</p>
                             </div>
@@ -287,7 +287,7 @@
                             <figure>
                                 <img src="imgs/news-04.jpg" alt="">
                             </figure>
-                            <div>
+                            <div class="info">
                                 <h3>Created SASS Section</h3>
                                 <p class="m-0 fs-14 c-grey">News SASS Example & Tutorials</p>
                             </div>
@@ -297,8 +297,62 @@
 
                     </div>
 
+                    <div id="them">
+                        <i class="fa-solid fa-circle-half-stroke c-blue"></i>
+                    </div>
+
 
                     <!-- End Lastest News -->
+
+                    <!-- Start Tasks -->
+                    <div class="tasks p-20 bg-white rad-10">
+                        <h2 class="mt-0 mb-20 ">Lastes Tasks</h2>
+                        <div class="task-row d-flex between-flex">
+                            <div class="info">
+                                <h3 class="mt-0 mb-5 fs-15">Creat New Project</h3>
+                                <p class="m-0 c-grey">Creat An Project With Html , Css And Js .</p>
+                            </div>
+                            <i class="fa-solid fa-trash-can delete"></i>
+
+                        </div>
+
+                        <div class="task-row d-flex between-flex">
+                            <div class="info">
+                                <h3 class="mt-0 mb-5 fs-15">Write Article</h3>
+                                <p class="m-0 c-grey">Write Low Level vs High Level Languages </p>
+                            </div>
+                            <i class="fa-solid fa-trash-can delete"></i>
+
+                        </div>
+
+                        <div class="task-row d-flex between-flex done">
+                            <div class="info">
+                                <h3 class="mt-0 mb-5 fs-15">Finish Flutur Project</h3>
+                                <p class="m-0 c-grey">Publich Academy Programming Project</p>
+                            </div>
+                            <i class="fa-solid fa-trash-can delete"></i>
+
+                        </div>
+
+                        <div class="task-row d-flex between-flex">
+                            <div class="info">
+                                <h3 class="mt-0 mb-5 fs-15">Attend The Meeting</h3>
+                                <p class="m-0 c-grey">Attend The Project Business Analysis Meeting</p>
+                            </div>
+                            <i class="fa-solid fa-trash-can delete"></i>
+
+                        </div>
+
+                        <div class="task-row d-flex between-flex">
+                            <div class="info">
+                                <h3 class="mt-0 mb-5 fs-15">Finish Lesson</h3>
+                                <p class="m-0 c-grey">Finish Teaching Flex Box</p>
+                            </div>
+                            <i class="fa-solid fa-trash-can delete"></i>
+
+                        </div>
+                    </div>
+                    <!-- End Tasks -->
 
                 </div>
             </div>
@@ -319,6 +373,10 @@
 
         $("#close").on('click', function () {
             $('.warning').fadeToggle().css('display', 'none')
+        });
+
+        $("#them").on('click', function () {
+            $('div').Toggle($('div').css('background-color', '#0B215E'));
         });
     </script>
 
