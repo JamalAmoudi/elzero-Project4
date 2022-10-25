@@ -13,7 +13,7 @@ body {
 
     margin: 0;
     position: relative;
-    
+
 }
 
 div {
@@ -480,6 +480,38 @@ ul {
     width: calc(50% - 10px);
 }
 
+.tickets .box {
+    cursor: pointer;
+}
+
+.tickets .box:nth-child(1):hover {
+    background-color: var(--orange-color);
+    color: white;
+}
+
+.tickets .box:nth-child(2):hover {
+    background-color: var(--blue-color);
+    color: white;
+}
+
+.tickets .box:nth-child(3):hover {
+    background-color: var(--green-color);
+    color: white;
+}
+
+.tickets .box:nth-child(4):hover {
+    background-color: var(--red-color);
+    color: white;
+}
+
+.tickets .box:hover i {
+    color: white;
+}
+
+.tickets .box:hover span {
+    color: white;
+}
+
 @media (max-width:767px) {
     .tickets .box {
         width: 100%;
@@ -492,10 +524,10 @@ ul {
 /* Start Latest News */
 
 
-.latest-news .news-row:not(:last-of-type){
-margin-bottom: 20px;
-padding-bottom: 20px;
-border-bottom: 1px solid #eee;
+.latest-news .news-row:not(:last-of-type) {
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #eee;
 }
 
 .latest-news .news-row figure {
@@ -504,8 +536,8 @@ border-bottom: 1px solid #eee;
     border-radius: 6px;
     margin-right: 15px;
     overflow: hidden;
-    
-    
+
+
 }
 
 .latest-news .news-row figure img {
@@ -518,12 +550,12 @@ border-bottom: 1px solid #eee;
     flex-grow: 1;
 }
 
-.latest-news .news-row .info h3{
+.latest-news .news-row .info h3 {
     margin: 0 0 6px;
 }
 
 @media (max-width:767px) {
-    .latest-news .news-row  {
+    .latest-news .news-row {
         display: block;
     }
 
@@ -534,7 +566,7 @@ border-bottom: 1px solid #eee;
         height: 100px;
     }
 
-    .latest-news .news-row .lable{
+    .latest-news .news-row .lable {
         width: fit-content;
         margin: 10px auto;
     }
@@ -544,21 +576,21 @@ border-bottom: 1px solid #eee;
 
 /* Start Tasks */
 
-.tasks .task-row:not(:last-of-type){
+.tasks .task-row:not(:last-of-type) {
     margin-bottom: 15px;
     padding-bottom: 15px;
     border-bottom: 1px solid #eee;
 }
 
 .tasks .info {
-flex-grow: 1;
+    flex-grow: 1;
 }
 
 .tasks .done {
     opacity: 0.3;
 }
 
-.tasks .done h3 ,
+.tasks .done h3,
 .tasks .done p {
     text-decoration: line-through;
 }
@@ -569,7 +601,7 @@ flex-grow: 1;
     transition: 0.3s;
 }
 
-.tasks .delete:hover{
+.tasks .delete:hover {
     color: var(--red-color);
 }
 
@@ -581,11 +613,9 @@ flex-grow: 1;
     position: fixed;
     right: 20px;
     bottom: 20px;
-    padding: 18px 20px ;
+    padding: 18px 20px;
     border-radius: 50%;
     background-color: white;
     box-shadow: 0 0 10px #DDD;
     cursor: pointer;
 }
-
-

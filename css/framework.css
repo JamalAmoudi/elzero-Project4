@@ -236,4 +236,8 @@
     border-radius: 6px;
   }
 
+
+.tra{
+    transition: 0.3s;
+}
 /* End Components */
