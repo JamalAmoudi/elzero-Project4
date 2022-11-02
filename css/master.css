@@ -482,7 +482,11 @@ ul {
 
 .tickets .box {
     cursor: pointer;
+    position: relative;
 }
+
+
+
 
 .tickets .box:nth-child(1):hover {
     background-color: var(--orange-color);
